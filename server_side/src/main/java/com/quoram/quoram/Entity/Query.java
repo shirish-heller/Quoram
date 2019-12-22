@@ -50,6 +50,28 @@ public class Query {
     @Column(name = "interested_teachers")
     private String interestedTeachers;
 
+    @Column(name = "session_end_time")
+    private int sessionEndTime;
+
+    @Column(name = "session_duration")
+    private String sessionDuration;
+
+    public int getSessionEndTime() {
+        return sessionEndTime;
+    }
+
+    public void setSessionEndTime(int sessionEndTime) {
+        this.sessionEndTime = sessionEndTime;
+    }
+
+    public String getSessionDuration() {
+        return sessionDuration;
+    }
+
+    public void setSessionDuration(String sessionDuration) {
+        this.sessionDuration = sessionDuration;
+    }
+
     public int getId() {
         return id;
     }
